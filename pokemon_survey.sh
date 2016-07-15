@@ -17,7 +17,7 @@ read NUMBER
 TIME=$(date)
 echo "It is $TIME, thank you for participating"
 
-echo $NAME >> temp.list
+echo $NAME > temp.list
 echo $PLAY >> temp.list
 echo $TEAM >> temp.list
 echo $FAVORITE >> temp.list
