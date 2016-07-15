@@ -1,5 +1,5 @@
 # What is your name?
-echo "What is your name?"
+echo "What is your GitHub name?"
 read NAME
 #Do you play Pokemon Go? (y/n)
 echo "Do you play Pokemon Go? (y/n)"
