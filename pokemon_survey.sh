@@ -21,6 +21,7 @@ echo $NAME > temp.list
 echo $PLAY >> temp.list
 echo $TEAM >> temp.list
 echo $FAVORITE >> temp.list
+echo $NUMBER >> temp.list
 echo $TIME >> temp.list
 
-paste -s temp.list >> aggregate.csv
+paste -d ',' -s temp.list >> aggregate.csv
