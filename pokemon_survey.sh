@@ -1,5 +1,5 @@
 # What is your name?
-echo "What is your name?"
+echo "What is your GitHub name?"
 read NAME
 #Do you play Pokemon Go? (y/n)
 echo "Do you play Pokemon Go? (y/n)"
@@ -17,10 +17,11 @@ read NUMBER
 TIME=$(date)
 echo "It is $TIME, thank you for participating"
 
-echo $NAME >> temp.list
+echo $NAME > temp.list
 echo $PLAY >> temp.list
 echo $TEAM >> temp.list
 echo $FAVORITE >> temp.list
+echo $NUMBER >> temp.list
 echo $TIME >> temp.list
 
-paste -s temp.list >> aggregate.csv
+paste -d ',' -s temp.list >> aggregate.csv
